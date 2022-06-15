@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MkK-bm-V8N">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="4vp-vk-Mzb">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="MkK-bm-V8N" customClass="LoginViewController" customModule="MedUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pbq-V4-k6P">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0S-tn-pzN">
+                                <rect key="frame" x="10" y="44" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="0LW-Uu-bgM"/>
+                                    <constraint firstAttribute="height" constant="40" id="MEh-wE-xox"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                <state key="normal" image="backButton"/>
+                                <connections>
+                                    <action selector="backButtonAction:" destination="MkK-bm-V8N" eventType="touchUpInside" id="0QO-Rb-VWo"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="med_icon" translatesAutoresizingMaskIntoConstraints="NO" id="gyF-ho-Z8M">
+                                <rect key="frame" x="183.5" y="118" width="47" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="1rO-br-bxx"/>
+                                    <constraint firstAttribute="width" constant="47" id="dkb-67-rBK"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJu-qe-YpY" customClass="MedUpTitle" customModule="MedUp" customModuleProvider="target">
+                                <rect key="frame" x="186" y="186" width="42.5" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="1qJ-VW-wap"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LMu-FQ-OEu" customClass="MedUpSubTitle" customModule="MedUp" customModuleProvider="target">
+                                <rect key="frame" x="186" y="243" width="42" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Uv9-ae-Hrz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Անուն" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MAG-jg-rMv">
+                                <rect key="frame" x="16" y="330" width="382" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="pmT-Bt-rsf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Գաղտնաբառ" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="urx-db-6LA">
+                                <rect key="frame" x="16" y="404" width="382" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="ETO-Zt-799"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZG2-cL-Gov" customClass="MedLoadingButton" customModule="MedUp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="711" width="382" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="Raz-TJ-uQI"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJ7-Mr-exY" customClass="MedLoadingButton" customModule="MedUp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="784" width="382" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="laJ-i4-SSM"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="urx-db-6LA" firstAttribute="top" secondItem="MAG-jg-rMv" secondAttribute="bottom" constant="18" id="62H-3S-be6"/>
+                            <constraint firstItem="q0S-tn-pzN" firstAttribute="leading" secondItem="laJ-i4-SSM" secondAttribute="leading" constant="10" id="6ty-9P-UDO"/>
+                            <constraint firstItem="hJ7-Mr-exY" firstAttribute="top" secondItem="ZG2-cL-Gov" secondAttribute="bottom" constant="17" id="893-hd-G6i"/>
+                            <constraint firstItem="laJ-i4-SSM" firstAttribute="trailing" secondItem="urx-db-6LA" secondAttribute="trailing" constant="16" id="8z7-om-4R5"/>
+                            <constraint firstItem="hJ7-Mr-exY" firstAttribute="leading" secondItem="laJ-i4-SSM" secondAttribute="leading" constant="16" id="BwZ-ng-cpE"/>
+                            <constraint firstItem="ZG2-cL-Gov" firstAttribute="top" secondItem="urx-db-6LA" secondAttribute="bottom" constant="251" id="Deh-o7-2Ij"/>
+                            <constraint firstItem="ZG2-cL-Gov" firstAttribute="leading" secondItem="laJ-i4-SSM" secondAttribute="leading" constant="16" id="Qxr-EY-E7u"/>
+                            <constraint firstItem="LMu-FQ-OEu" firstAttribute="top" secondItem="wJu-qe-YpY" secondAttribute="bottom" constant="16" id="Vlp-Ed-w5u"/>
+                            <constraint firstItem="gyF-ho-Z8M" firstAttribute="centerX" secondItem="Pbq-V4-k6P" secondAttribute="centerX" id="WXy-Jt-gA4"/>
+                            <constraint firstItem="urx-db-6LA" firstAttribute="leading" secondItem="laJ-i4-SSM" secondAttribute="leading" constant="16" id="YCs-ou-Gma"/>
+                            <constraint firstItem="gyF-ho-Z8M" firstAttribute="top" secondItem="laJ-i4-SSM" secondAttribute="top" constant="74" id="cOq-My-gvJ"/>
+                            <constraint firstItem="laJ-i4-SSM" firstAttribute="trailing" secondItem="MAG-jg-rMv" secondAttribute="trailing" constant="16" id="ddn-7z-T4K"/>
+                            <constraint firstItem="laJ-i4-SSM" firstAttribute="trailing" secondItem="ZG2-cL-Gov" secondAttribute="trailing" constant="16" id="dod-Rw-kug"/>
+                            <constraint firstItem="wJu-qe-YpY" firstAttribute="top" secondItem="gyF-ho-Z8M" secondAttribute="bottom" constant="21" id="f1E-Z2-ilr"/>
+                            <constraint firstItem="q0S-tn-pzN" firstAttribute="top" secondItem="laJ-i4-SSM" secondAttribute="top" id="h85-rt-3nP"/>
+                            <constraint firstItem="wJu-qe-YpY" firstAttribute="centerX" secondItem="Pbq-V4-k6P" secondAttribute="centerX" id="hZx-J4-d1K"/>
+                            <constraint firstItem="laJ-i4-SSM" firstAttribute="trailing" secondItem="hJ7-Mr-exY" secondAttribute="trailing" constant="16" id="l2m-p0-Mis"/>
+                            <constraint firstItem="ZG2-cL-Gov" firstAttribute="centerX" secondItem="Pbq-V4-k6P" secondAttribute="centerX" id="mqo-IZ-uPm"/>
+                            <constraint firstItem="MAG-jg-rMv" firstAttribute="top" secondItem="LMu-FQ-OEu" secondAttribute="bottom" constant="43" id="p83-56-5or"/>
+                            <constraint firstItem="MAG-jg-rMv" firstAttribute="leading" secondItem="laJ-i4-SSM" secondAttribute="leading" constant="16" id="x8M-4g-AhL"/>
+                            <constraint firstItem="LMu-FQ-OEu" firstAttribute="centerX" secondItem="Pbq-V4-k6P" secondAttribute="centerX" id="yY8-ye-2YN"/>
+                            <constraint firstItem="laJ-i4-SSM" firstAttribute="bottom" secondItem="hJ7-Mr-exY" secondAttribute="bottom" constant="48" id="yoc-6A-iLQ"/>
+                            <constraint firstItem="hJ7-Mr-exY" firstAttribute="centerX" secondItem="Pbq-V4-k6P" secondAttribute="centerX" id="zkj-EG-r0P"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="forgotPassButton" destination="hJ7-Mr-exY" id="7Zf-cK-KbS"/>
+                        <outlet property="submitButton" destination="ZG2-cL-Gov" id="hBQ-R3-9BB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kA1-5K-NA3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-626.08695652173913" y="20.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backButton" width="64" height="64"/>
+        <image name="med_icon" width="48" height="49"/>
+    </resources>
+</document>

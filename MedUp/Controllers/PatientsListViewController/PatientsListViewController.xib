@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PatientsListViewController" customModule="MedUp" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="ydA-iD-FyM" id="iLW-hZ-07h"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TLV-FP-9ST">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ydA-iD-FyM">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="hhp-0w-sZY"/>
+                                <outlet property="delegate" destination="-1" id="dFB-oA-zRw"/>
+                            </connections>
+                        </tableView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nce-hG-7E9">
+                            <rect key="frame" x="262.5" y="753" width="139.5" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="4JT-Fn-BO1"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="filled" title="+ Ավելացնել այց"/>
+                            <connections>
+                                <action selector="addVisitPressed:" destination="-1" eventType="touchUpInside" id="FtM-Zc-RFg"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Nce-hG-7E9" secondAttribute="trailing" constant="12" id="7ik-5B-eiu"/>
+                        <constraint firstItem="ydA-iD-FyM" firstAttribute="top" secondItem="TLV-FP-9ST" secondAttribute="top" id="Lq8-02-UgM"/>
+                        <constraint firstAttribute="bottom" secondItem="ydA-iD-FyM" secondAttribute="bottom" id="XK9-Df-gMG"/>
+                        <constraint firstItem="ydA-iD-FyM" firstAttribute="leading" secondItem="TLV-FP-9ST" secondAttribute="leading" id="aqH-df-raF"/>
+                        <constraint firstAttribute="bottom" secondItem="Nce-hG-7E9" secondAttribute="bottom" constant="25" id="rAS-h8-ZkT"/>
+                        <constraint firstAttribute="trailing" secondItem="ydA-iD-FyM" secondAttribute="trailing" id="wgY-13-KnU"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="TLV-FP-9ST" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="7s2-6h-6qV"/>
+                <constraint firstItem="TLV-FP-9ST" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Vfx-lH-Kw6"/>
+                <constraint firstItem="TLV-FP-9ST" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="W1u-eV-IuB"/>
+                <constraint firstItem="TLV-FP-9ST" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="vak-Jn-HCg"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="77"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

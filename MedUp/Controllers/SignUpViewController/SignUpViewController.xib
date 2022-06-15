@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController" customModule="MedUp" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController storyboardIdentifier="LoginViewController" id="YRL-t6-6Ba" customClass="LoginViewController" customModule="MedUp" customModuleProvider="target">
+            <view key="view" contentMode="scaleToFill" id="JOS-Nn-CgE">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Nb-EZ-Eaj">
+                        <rect key="frame" x="10" y="44" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="0NY-WR-p46"/>
+                            <constraint firstAttribute="height" constant="40" id="gaO-ih-eyb"/>
+                        </constraints>
+                        <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                        <state key="normal" image="backButton"/>
+                        <connections>
+                            <action selector="backButtonAction:" destination="YRL-t6-6Ba" eventType="touchUpInside" id="bgt-YA-cJg"/>
+                        </connections>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="med_icon" translatesAutoresizingMaskIntoConstraints="NO" id="1FZ-qA-jPL">
+                        <rect key="frame" x="183.5" y="118" width="47" height="47"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="47" id="0Al-uO-7td"/>
+                            <constraint firstAttribute="height" constant="47" id="Xd4-bD-Fij"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6xj-Ex-tme" customClass="MedUpTitle" customModule="MedUp" customModuleProvider="target">
+                        <rect key="frame" x="186" y="186" width="42.5" height="41"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="41" id="j3v-Hf-fNv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jF6-Jb-TrV" customClass="MedUpSubTitle" customModule="MedUp" customModuleProvider="target">
+                        <rect key="frame" x="186" y="243" width="42" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="FtG-bq-Tbm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Անուն" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N1P-wc-ooP">
+                        <rect key="frame" x="16" y="330" width="382" height="56"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="56" id="Vna-RM-jke"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQK-nD-l55" customClass="MedLoadingButton" customModule="MedUp" customModuleProvider="target">
+                        <rect key="frame" x="16" y="711" width="382" height="56"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="56" id="RyA-jH-nSE"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UmA-Us-glg" customClass="MedLoadingButton" customModule="MedUp" customModuleProvider="target">
+                        <rect key="frame" x="16" y="784" width="382" height="30"/>
+                        <state key="normal" title="Button"/>
+                    </button>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Հաստատել Գաղտնաբառը" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="omo-1s-a3K">
+                        <rect key="frame" x="16" y="478" width="382" height="56"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="56" id="hC2-Nb-EwI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oq2-8h-SV3">
+                        <rect key="frame" x="354" y="492" width="28" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="28" id="4fN-aD-unb"/>
+                            <constraint firstAttribute="height" constant="28" id="7Gp-ap-F0o"/>
+                        </constraints>
+                        <state key="normal" image="eye"/>
+                    </button>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Գաղտնաբառ" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KFG-yW-owi">
+                        <rect key="frame" x="16" y="404" width="382" height="56"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="56" id="Kf3-Vk-NLI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GFD-IO-uqw">
+                        <rect key="frame" x="354" y="418" width="28" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="28" id="KUJ-6A-ENn"/>
+                            <constraint firstAttribute="height" constant="28" id="omT-nu-iBz"/>
+                        </constraints>
+                        <state key="normal" image="eye"/>
+                    </button>
+                </subviews>
+                <viewLayoutGuide key="safeArea" id="ecH-bB-Jnn"/>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="N1P-wc-ooP" firstAttribute="leading" secondItem="ecH-bB-Jnn" secondAttribute="leading" constant="16" id="1yr-V7-lKp"/>
+                    <constraint firstItem="KFG-yW-owi" firstAttribute="leading" secondItem="ecH-bB-Jnn" secondAttribute="leading" constant="16" id="7zO-9I-KAM"/>
+                    <constraint firstItem="GFD-IO-uqw" firstAttribute="centerY" secondItem="KFG-yW-owi" secondAttribute="centerY" id="8Kc-IF-MfU"/>
+                    <constraint firstItem="TQK-nD-l55" firstAttribute="leading" secondItem="ecH-bB-Jnn" secondAttribute="leading" constant="16" id="9JD-yn-FW9"/>
+                    <constraint firstItem="UmA-Us-glg" firstAttribute="top" secondItem="TQK-nD-l55" secondAttribute="bottom" constant="17" id="9hL-z4-10l"/>
+                    <constraint firstItem="Oq2-8h-SV3" firstAttribute="trailing" secondItem="omo-1s-a3K" secondAttribute="trailing" constant="-16" id="BFW-FJ-R6O"/>
+                    <constraint firstItem="jF6-Jb-TrV" firstAttribute="top" secondItem="6xj-Ex-tme" secondAttribute="bottom" constant="16" id="R0s-SA-kwG"/>
+                    <constraint firstItem="6xj-Ex-tme" firstAttribute="centerX" secondItem="JOS-Nn-CgE" secondAttribute="centerX" id="TNr-Rk-xi1"/>
+                    <constraint firstItem="ecH-bB-Jnn" firstAttribute="trailing" secondItem="KFG-yW-owi" secondAttribute="trailing" constant="16" id="Tw4-6W-EXu"/>
+                    <constraint firstItem="N1P-wc-ooP" firstAttribute="top" secondItem="jF6-Jb-TrV" secondAttribute="bottom" constant="43" id="ZXg-rm-9fd"/>
+                    <constraint firstItem="omo-1s-a3K" firstAttribute="leading" secondItem="ecH-bB-Jnn" secondAttribute="leading" constant="16" id="ZdI-9H-BOe"/>
+                    <constraint firstItem="ecH-bB-Jnn" firstAttribute="trailing" secondItem="omo-1s-a3K" secondAttribute="trailing" constant="16" id="aLC-Rm-hVT"/>
+                    <constraint firstItem="1Nb-EZ-Eaj" firstAttribute="leading" secondItem="ecH-bB-Jnn" secondAttribute="leading" constant="10" id="bSa-Fk-dMT"/>
+                    <constraint firstItem="jF6-Jb-TrV" firstAttribute="centerX" secondItem="JOS-Nn-CgE" secondAttribute="centerX" id="bZs-9V-fuR"/>
+                    <constraint firstItem="ecH-bB-Jnn" firstAttribute="trailing" secondItem="N1P-wc-ooP" secondAttribute="trailing" constant="16" id="cLp-U3-E9b"/>
+                    <constraint firstItem="Oq2-8h-SV3" firstAttribute="centerY" secondItem="omo-1s-a3K" secondAttribute="centerY" id="f7X-6Z-fen"/>
+                    <constraint firstItem="1FZ-qA-jPL" firstAttribute="top" secondItem="ecH-bB-Jnn" secondAttribute="top" constant="74" id="foJ-vC-gt6"/>
+                    <constraint firstItem="6xj-Ex-tme" firstAttribute="top" secondItem="1FZ-qA-jPL" secondAttribute="bottom" constant="21" id="geW-Qz-AfF"/>
+                    <constraint firstItem="ecH-bB-Jnn" firstAttribute="trailing" secondItem="TQK-nD-l55" secondAttribute="trailing" constant="16" id="h56-Gs-l9N"/>
+                    <constraint firstItem="TQK-nD-l55" firstAttribute="centerX" secondItem="JOS-Nn-CgE" secondAttribute="centerX" id="hrV-sJ-ewG"/>
+                    <constraint firstItem="ecH-bB-Jnn" firstAttribute="trailing" secondItem="UmA-Us-glg" secondAttribute="trailing" constant="16" id="ifs-Gh-1Hp"/>
+                    <constraint firstItem="GFD-IO-uqw" firstAttribute="trailing" secondItem="KFG-yW-owi" secondAttribute="trailing" constant="-16" id="k2a-EQ-NO2"/>
+                    <constraint firstItem="UmA-Us-glg" firstAttribute="centerX" secondItem="JOS-Nn-CgE" secondAttribute="centerX" id="ow3-bt-3PE"/>
+                    <constraint firstItem="1Nb-EZ-Eaj" firstAttribute="top" secondItem="ecH-bB-Jnn" secondAttribute="top" id="ru2-OG-G8b"/>
+                    <constraint firstItem="omo-1s-a3K" firstAttribute="top" secondItem="KFG-yW-owi" secondAttribute="bottom" constant="18" id="uS9-ZU-v9Y"/>
+                    <constraint firstItem="ecH-bB-Jnn" firstAttribute="bottom" secondItem="UmA-Us-glg" secondAttribute="bottom" constant="48" id="veT-Rk-05v"/>
+                    <constraint firstItem="UmA-Us-glg" firstAttribute="leading" secondItem="ecH-bB-Jnn" secondAttribute="leading" constant="16" id="w3l-tB-Gwj"/>
+                    <constraint firstItem="1FZ-qA-jPL" firstAttribute="centerX" secondItem="JOS-Nn-CgE" secondAttribute="centerX" id="wN8-Dy-8RE"/>
+                    <constraint firstItem="KFG-yW-owi" firstAttribute="top" secondItem="N1P-wc-ooP" secondAttribute="bottom" constant="18" id="xfD-KK-MGG"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="forgotPassButton" destination="UmA-Us-glg" id="0eg-xu-Ffb"/>
+                <outlet property="submitButton" destination="TQK-nD-l55" id="2Dx-ip-9Tv"/>
+            </connections>
+            <point key="canvasLocation" x="-626.08695652173913" y="20.758928571428569"/>
+        </viewController>
+    </objects>
+    <resources>
+        <image name="backButton" width="64" height="64"/>
+        <image name="eye" width="28" height="28"/>
+        <image name="med_icon" width="48" height="49"/>
+    </resources>
+</document>

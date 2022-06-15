@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QuestionViewController" customModule="MedUp" customModuleProvider="target">
+            <connections>
+                <outlet property="booleanConatinerView" destination="w9s-rD-Dpn" id="OxK-9X-NEA"/>
+                <outlet property="booleanNoButton" destination="byv-17-IKa" id="uap-B6-CTC"/>
+                <outlet property="booleanTitleLabel" destination="egv-Qo-4dY" id="2xb-fx-PWr"/>
+                <outlet property="booleanYesButton" destination="tM2-dy-yob" id="uBY-ex-GQb"/>
+                <outlet property="maxValueLabel" destination="CW7-XH-MmJ" id="Ssq-k3-rne"/>
+                <outlet property="minValueLabel" destination="DO6-ka-Jnz" id="K6w-ej-892"/>
+                <outlet property="nextButton" destination="PUa-DW-zTP" id="rOe-o5-30d"/>
+                <outlet property="tableContainerView" destination="Z4l-o5-LgV" id="mLC-sA-XQd"/>
+                <outlet property="tableView" destination="Obk-ka-4Zw" id="LfF-R9-5R9"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z4l-o5-LgV">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="never" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Obk-ka-4Zw">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="729"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <view key="tableHeaderView" contentMode="scaleToFill" id="bax-Lc-U5p">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="106"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8w0-By-2a5">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="106"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="260" verticalHuggingPriority="251" text="Նշված ախտանիշներից որևիցե մեկը" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3XK-YT-j1S">
+                                                <rect key="frame" x="16" y="16" width="252.5" height="57"/>
+                                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="21"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Au-aI-pMH">
+                                                <rect key="frame" x="284.5" y="24" width="121.5" height="58"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;none text&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DO6-ka-Jnz" customClass="MedLabel" customModule="MedUp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="121.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;none text&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CW7-XH-MmJ" customClass="MedLabel" customModule="MedUp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="37.5" width="121.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="106" id="3vd-Yb-2FJ"/>
+                                            <constraint firstItem="0Au-aI-pMH" firstAttribute="centerY" secondItem="8w0-By-2a5" secondAttribute="centerY" id="99R-y5-MBA"/>
+                                            <constraint firstAttribute="trailing" secondItem="0Au-aI-pMH" secondAttribute="trailing" constant="8" id="O6r-uK-4Gt"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="3XK-YT-j1S" secondAttribute="bottom" constant="16" id="Ofd-8Q-7Qx"/>
+                                            <constraint firstItem="3XK-YT-j1S" firstAttribute="top" secondItem="8w0-By-2a5" secondAttribute="top" constant="16" id="gb6-rR-j1c"/>
+                                            <constraint firstItem="0Au-aI-pMH" firstAttribute="leading" secondItem="3XK-YT-j1S" secondAttribute="trailing" constant="16" id="v5T-NW-IRl"/>
+                                            <constraint firstItem="3XK-YT-j1S" firstAttribute="leading" secondItem="8w0-By-2a5" secondAttribute="leading" constant="16" id="z3t-MQ-EQ6"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="PPX-hQ-S9v"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="8w0-By-2a5" firstAttribute="top" secondItem="PPX-hQ-S9v" secondAttribute="top" id="3MS-Eh-xh5"/>
+                                    <constraint firstItem="8w0-By-2a5" firstAttribute="leading" secondItem="bax-Lc-U5p" secondAttribute="leading" id="3tQ-4g-dry"/>
+                                    <constraint firstAttribute="trailing" secondItem="8w0-By-2a5" secondAttribute="trailing" id="Cae-3o-3o7"/>
+                                    <constraint firstAttribute="bottom" secondItem="8w0-By-2a5" secondAttribute="bottom" id="O2L-kQ-rPe"/>
+                                </constraints>
+                            </view>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="kR5-7n-cgK"/>
+                                <outlet property="delegate" destination="-1" id="gvW-AE-6Rn"/>
+                            </connections>
+                        </tableView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUa-DW-zTP" customClass="MedLoadingButton" customModule="MedUp" customModuleProvider="target">
+                            <rect key="frame" x="16" y="734" width="382" height="55"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="pDf-9n-hiU"/>
+                            </constraints>
+                            <state key="normal" title="ԱՌԱՋ"/>
+                            <connections>
+                                <action selector="nextButtonAction" destination="-1" eventType="touchUpInside" id="eDW-K6-a7J"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Obk-ka-4Zw" firstAttribute="top" secondItem="Z4l-o5-LgV" secondAttribute="top" id="7tf-Zx-TUC"/>
+                        <constraint firstAttribute="bottom" secondItem="PUa-DW-zTP" secondAttribute="bottom" constant="29" id="BZ4-Vo-AU5"/>
+                        <constraint firstAttribute="trailing" secondItem="PUa-DW-zTP" secondAttribute="trailing" constant="16" id="FiS-9R-fxi"/>
+                        <constraint firstItem="PUa-DW-zTP" firstAttribute="top" secondItem="Obk-ka-4Zw" secondAttribute="bottom" constant="5" id="L8F-KK-sWZ"/>
+                        <constraint firstAttribute="trailing" secondItem="Obk-ka-4Zw" secondAttribute="trailing" id="WOG-GZ-6t2"/>
+                        <constraint firstItem="PUa-DW-zTP" firstAttribute="leading" secondItem="Z4l-o5-LgV" secondAttribute="leading" constant="16" id="eGh-py-k0H"/>
+                        <constraint firstItem="Obk-ka-4Zw" firstAttribute="leading" secondItem="Z4l-o5-LgV" secondAttribute="leading" id="h0d-I3-XqH"/>
+                    </constraints>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w9s-rD-Dpn">
+                    <rect key="frame" x="16" y="378.5" width="382" height="139"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="2Fg-cd-hs5">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="139"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egv-Qo-4dY" customClass="MedLabel" customModule="MedUp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="382" height="49"/>
+                                    <string key="text">Արդյո՞ք հիվանդի մոտ 
+հայտնաբերվել է թոքաբորբ</string>
+                                    <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="18"/>
+                                    <color key="textColor" red="0.22745098039215686" green="0.24313725490196078" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="yBC-Bx-wWE">
+                                    <rect key="frame" x="0.0" y="84" width="382" height="55"/>
+                                    <subviews>
+                                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byv-17-IKa" customClass="MedLoadingButton" customModule="MedUp" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="182.5" height="55"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="55" id="TTj-Ja-W5n"/>
+                                            </constraints>
+                                            <state key="normal" title="ՈՉ"/>
+                                            <connections>
+                                                <action selector="booleanNoButtonAction" destination="-1" eventType="touchUpInside" id="FJo-xW-0xc"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tM2-dy-yob" customClass="MedLoadingButton" customModule="MedUp" customModuleProvider="target">
+                                            <rect key="frame" x="199.5" y="0.0" width="182.5" height="55"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="55" id="LWG-2K-5US"/>
+                                            </constraints>
+                                            <state key="normal" title="ԱՅՈ"/>
+                                            <connections>
+                                                <action selector="booleanYesButtonAction" destination="-1" eventType="touchUpInside" id="2v0-Zu-iLX"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="2Fg-cd-hs5" secondAttribute="trailing" id="2FR-dL-xzd"/>
+                        <constraint firstItem="2Fg-cd-hs5" firstAttribute="top" secondItem="w9s-rD-Dpn" secondAttribute="top" id="73Q-xn-rp5"/>
+                        <constraint firstItem="2Fg-cd-hs5" firstAttribute="leading" secondItem="w9s-rD-Dpn" secondAttribute="leading" id="Ipu-pi-QA9"/>
+                        <constraint firstAttribute="bottom" secondItem="2Fg-cd-hs5" secondAttribute="bottom" id="mMf-Gu-cPw"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="w9s-rD-Dpn" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="6LY-Oh-WH6"/>
+                <constraint firstItem="w9s-rD-Dpn" firstAttribute="top" relation="greaterThanOrEqual" secondItem="fnl-2z-Ty3" secondAttribute="top" id="9Yw-Qc-hOo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="w9s-rD-Dpn" secondAttribute="trailing" constant="16" id="9tH-4S-pqe"/>
+                <constraint firstItem="w9s-rD-Dpn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="B8B-Vv-WCO"/>
+                <constraint firstItem="Z4l-o5-LgV" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="Mve-nX-TS8"/>
+                <constraint firstItem="Z4l-o5-LgV" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Ona-ag-bfk"/>
+                <constraint firstItem="Z4l-o5-LgV" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Tea-eU-HZg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="w9s-rD-Dpn" secondAttribute="bottom" id="a85-3m-6ho"/>
+                <constraint firstItem="Z4l-o5-LgV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ckY-Y3-Zi2"/>
+                <constraint firstItem="w9s-rD-Dpn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="stG-16-EZR"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

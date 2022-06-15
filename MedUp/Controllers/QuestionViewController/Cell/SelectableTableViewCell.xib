@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="SelectableTableViewCell" customModule="MedUp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_radio_selected" translatesAutoresizingMaskIntoConstraints="NO" id="hbw-3I-XCm">
+                        <rect key="frame" x="16" y="11" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="22" id="1iL-NV-OQs"/>
+                            <constraint firstAttribute="height" constant="22" id="PG3-Jp-bMS"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;none text&gt;" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wiK-0h-76J" customClass="MedLabel" customModule="MedUp" customModuleProvider="target">
+                        <rect key="frame" x="46" y="13" width="68.5" height="18"/>
+                        <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="13"/>
+                        <color key="textColor" red="0.22745098039215686" green="0.24313725490196078" blue="0.30588235294117649" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="wiK-0h-76J" secondAttribute="bottom" constant="13" id="0K7-78-Oyx"/>
+                    <constraint firstItem="wiK-0h-76J" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="5n7-yC-2wT"/>
+                    <constraint firstItem="hbw-3I-XCm" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="7aS-Ok-K9Y"/>
+                    <constraint firstItem="hbw-3I-XCm" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="top" constant="9" id="8b0-eR-0dk"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wiK-0h-76J" secondAttribute="trailing" constant="8" id="COB-MF-ag0"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="hbw-3I-XCm" secondAttribute="bottom" constant="9" id="pj8-xR-9iX"/>
+                    <constraint firstItem="wiK-0h-76J" firstAttribute="leading" secondItem="hbw-3I-XCm" secondAttribute="trailing" constant="8" id="sxH-Mb-wNV"/>
+                    <constraint firstItem="wiK-0h-76J" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="tfp-oC-v71"/>
+                    <constraint firstItem="hbw-3I-XCm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="yHY-9q-X0g"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="radioImageView" destination="hbw-3I-XCm" id="0hR-XH-2Dl"/>
+                <outlet property="titleLabel" destination="wiK-0h-76J" id="obE-Af-GyT"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="95"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_radio_selected" width="28" height="29"/>
+    </resources>
+</document>

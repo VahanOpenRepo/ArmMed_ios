@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddVisitViewController" customModule="MedUp" customModuleProvider="target">
+            <connections>
+                <outlet property="caseNumberTextField" destination="OpH-mF-v5V" id="o0F-n5-Ukj"/>
+                <outlet property="endDateTextField" destination="gtt-cl-LLz" id="jMN-Gi-Fhp"/>
+                <outlet property="endHourTextField" destination="oJP-M6-wpu" id="t8w-MI-a1v"/>
+                <outlet property="financeTextField" destination="H9y-PL-dAt" id="WQi-cD-ret"/>
+                <outlet property="healthIssueCaseTextField" destination="IJA-HA-55T" id="6b9-sS-iBr"/>
+                <outlet property="healthIssueStartDateTextField" destination="4In-jn-p1e" id="0z8-NJ-lWi"/>
+                <outlet property="healthIssueStartTimeTextField" destination="btR-5n-r2l" id="yIz-55-cMb"/>
+                <outlet property="healthIssueTypeTextField" destination="fmC-YB-ppf" id="7BR-u5-AOn"/>
+                <outlet property="medicalInstituteTextField" destination="l9e-Qp-GMO" id="5nQ-Wx-hSW"/>
+                <outlet property="patientNameTextfield" destination="aTY-ON-uCS" id="58X-qA-uyt"/>
+                <outlet property="patientSurnameTextField" destination="O9Q-Wa-HR5" id="sml-fv-PBe"/>
+                <outlet property="phoneTextField" destination="bRg-hb-sIk" id="zhH-sN-EiG"/>
+                <outlet property="socialCardTextField" destination="kav-kB-E10" id="4KE-Hx-csT"/>
+                <outlet property="startDateTextField" destination="xme-Fg-D2K" id="9uu-j7-iT9"/>
+                <outlet property="startHourTextField" destination="Jft-j8-LcP" id="tme-qC-RvE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="visitReasonTextField" destination="fe1-sb-Nim" id="wDb-bq-vNf"/>
+                <outlet property="visitTypeTextField" destination="Ns2-PG-V2P" id="O8J-el-OvX"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iWy-6w-V2H">
+                    <rect key="frame" x="0.0" y="20" width="428" height="867"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wG3-7P-awx" userLabel="Content View">
+                            <rect key="frame" x="0.0" y="0.0" width="428" height="1000"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Դեպքի տեսակը" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IJA-HA-55T">
+                                    <rect key="frame" x="10" y="498" width="408" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="0GC-qX-3Lg"/>
+                                    </connections>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Պացիենտի Անունը" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aTY-ON-uCS">
+                                    <rect key="frame" x="10" y="672" width="408" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="xG6-e1-Ew9"/>
+                                    </connections>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ժամ" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="btR-5n-r2l">
+                                    <rect key="frame" x="219" y="580" width="199" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" textContentType="date-time"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="Jvi-Vb-eG1"/>
+                                    </connections>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Այցի տիպը" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ns2-PG-V2P">
+                                    <rect key="frame" x="10" y="314" width="408" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="GIL-op-YpF"/>
+                                    </connections>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NGt-Eo-ZDv" customClass="MedLoadingButton" customModule="MedUp" customModuleProvider="target">
+                                    <rect key="frame" x="10" y="782" width="408" height="55"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="55" id="CFr-gj-mmb"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="filled" title="ԱՎելացնել այց"/>
+                                    <connections>
+                                        <action selector="addVisit:" destination="-1" eventType="touchUpInside" id="DCD-ot-Vk3"/>
+                                    </connections>
+                                </button>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ֆինանսավորման աղբյուրը" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H9y-PL-dAt">
+                                    <rect key="frame" x="10" y="406" width="408" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="aKw-yR-kVC"/>
+                                    </connections>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ամսաթիվ" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4In-jn-p1e">
+                                    <rect key="frame" x="10" y="580" width="199" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" textContentType="date-time"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="xiZ-Sw-Wye"/>
+                                    </connections>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ժամ" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oJP-M6-wpu">
+                                    <rect key="frame" x="224" y="268" width="194" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" textContentType="date-time"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="cx6-7L-MZp"/>
+                                    </connections>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ժամ" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jft-j8-LcP">
+                                    <rect key="frame" x="223" y="186" width="193" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" textContentType="date-time"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="TcG-Xv-8dp"/>
+                                    </connections>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ամսաթիվ" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gtt-cl-LLz">
+                                    <rect key="frame" x="10" y="268" width="194" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" textContentType="date-time"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="lfL-3z-zcs"/>
+                                    </connections>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Պացիենտի բջջ. հեռախոսահամար" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bRg-hb-sIk">
+                                    <rect key="frame" x="10" y="104" width="408" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" textContentType="tel"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="XIh-b8-dvy"/>
+                                    </connections>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ամսաթիվ" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xme-Fg-D2K">
+                                    <rect key="frame" x="10" y="186" width="193" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" textContentType="date-time"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="k2d-MF-kgU"/>
+                                    </connections>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Այցի պատճառը" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fe1-sb-Nim">
+                                    <rect key="frame" x="10" y="360" width="408" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="fwe-0N-9jE"/>
+                                    </connections>
+                                </textField>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Այցի Ավարտ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="czi-bA-64I">
+                                    <rect key="frame" x="10" y="235" width="110" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Բժշկական հաստատություն" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l9e-Qp-GMO">
+                                    <rect key="frame" x="10" y="12" width="408" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="92y-IA-9zv"/>
+                                    </connections>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Պացիենտի ՀԾՀ-ն" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kav-kB-E10">
+                                    <rect key="frame" x="10" y="58" width="408" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" textContentType="tel"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="WlZ-ad-eY3"/>
+                                    </connections>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Դեպքի տիպը" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fmC-YB-ppf">
+                                    <rect key="frame" x="10" y="452" width="408" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="ZCZ-AS-xhB"/>
+                                    </connections>
+                                </textField>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Այցի սկիզբը" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k8F-6o-J6H">
+                                    <rect key="frame" x="10" y="153" width="105" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Դեպքի սկիզբը" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c01-kq-7Co">
+                                    <rect key="frame" x="10" y="547" width="125" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Պացիենտի Անունը" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O9Q-Wa-HR5">
+                                    <rect key="frame" x="10" y="718" width="408" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="RLy-dI-g3A"/>
+                                    </connections>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Դեպքի համարը" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OpH-mF-v5V">
+                                    <rect key="frame" x="10" y="626" width="408" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="Z1v-Rx-6sp"/>
+                                    </connections>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="bRg-hb-sIk" firstAttribute="leading" secondItem="wG3-7P-awx" secondAttribute="leading" constant="10" id="0cz-bv-ZPc"/>
+                                <constraint firstItem="c01-kq-7Co" firstAttribute="leading" secondItem="wG3-7P-awx" secondAttribute="leading" constant="10" id="1gf-Zh-bQZ"/>
+                                <constraint firstItem="k8F-6o-J6H" firstAttribute="leading" secondItem="wG3-7P-awx" secondAttribute="leading" constant="10" id="1lE-ZH-whW"/>
+                                <constraint firstItem="OpH-mF-v5V" firstAttribute="top" secondItem="btR-5n-r2l" secondAttribute="bottom" constant="12" id="2c0-9q-nWg"/>
+                                <constraint firstItem="l9e-Qp-GMO" firstAttribute="leading" secondItem="wG3-7P-awx" secondAttribute="leading" constant="10" id="4GU-hl-hsp"/>
+                                <constraint firstItem="czi-bA-64I" firstAttribute="top" secondItem="xme-Fg-D2K" secondAttribute="bottom" constant="15" id="4r5-4g-e2r"/>
+                                <constraint firstAttribute="trailing" secondItem="oJP-M6-wpu" secondAttribute="trailing" constant="10" id="6Fo-7u-32B"/>
+                                <constraint firstItem="NGt-Eo-ZDv" firstAttribute="leading" secondItem="wG3-7P-awx" secondAttribute="leading" constant="10" id="87J-R0-fm5"/>
+                                <constraint firstItem="gtt-cl-LLz" firstAttribute="leading" secondItem="wG3-7P-awx" secondAttribute="leading" constant="10" id="8yn-TA-Ynx"/>
+                                <constraint firstItem="O9Q-Wa-HR5" firstAttribute="top" secondItem="aTY-ON-uCS" secondAttribute="bottom" constant="12" id="9Xo-A1-OE1"/>
+                                <constraint firstItem="4In-jn-p1e" firstAttribute="top" secondItem="c01-kq-7Co" secondAttribute="bottom" constant="12" id="BNY-sQ-HVo"/>
+                                <constraint firstItem="xme-Fg-D2K" firstAttribute="centerY" secondItem="Jft-j8-LcP" secondAttribute="centerY" id="Bgp-gb-QM1"/>
+                                <constraint firstAttribute="trailing" secondItem="H9y-PL-dAt" secondAttribute="trailing" constant="10" id="CFb-TT-qaI"/>
+                                <constraint firstItem="O9Q-Wa-HR5" firstAttribute="leading" secondItem="wG3-7P-awx" secondAttribute="leading" constant="10" id="CxW-Ez-unJ"/>
+                                <constraint firstItem="gtt-cl-LLz" firstAttribute="width" secondItem="oJP-M6-wpu" secondAttribute="width" id="DCp-EH-5YO"/>
+                                <constraint firstItem="4In-jn-p1e" firstAttribute="width" secondItem="btR-5n-r2l" secondAttribute="width" id="EXA-2K-R21"/>
+                                <constraint firstAttribute="trailing" secondItem="l9e-Qp-GMO" secondAttribute="trailing" constant="10" id="EcJ-jq-TRS"/>
+                                <constraint firstItem="fe1-sb-Nim" firstAttribute="top" secondItem="Ns2-PG-V2P" secondAttribute="bottom" constant="12" id="Gnl-hW-tAj"/>
+                                <constraint firstItem="k8F-6o-J6H" firstAttribute="top" secondItem="bRg-hb-sIk" secondAttribute="bottom" constant="15" id="Grr-n6-XhP"/>
+                                <constraint firstItem="Ns2-PG-V2P" firstAttribute="leading" secondItem="wG3-7P-awx" secondAttribute="leading" constant="10" id="IHY-hX-6qV"/>
+                                <constraint firstItem="IJA-HA-55T" firstAttribute="leading" secondItem="wG3-7P-awx" secondAttribute="leading" constant="10" id="KQE-nI-qhR"/>
+                                <constraint firstItem="gtt-cl-LLz" firstAttribute="top" secondItem="czi-bA-64I" secondAttribute="bottom" constant="12" id="N8a-xM-zRl"/>
+                                <constraint firstItem="4In-jn-p1e" firstAttribute="leading" secondItem="wG3-7P-awx" secondAttribute="leading" constant="10" id="NJg-QF-OCw"/>
+                                <constraint firstItem="4In-jn-p1e" firstAttribute="centerY" secondItem="btR-5n-r2l" secondAttribute="centerY" id="O2v-GZ-TRf"/>
+                                <constraint firstItem="xme-Fg-D2K" firstAttribute="leading" secondItem="wG3-7P-awx" secondAttribute="leading" constant="10" id="Q5n-Hn-67M"/>
+                                <constraint firstItem="czi-bA-64I" firstAttribute="leading" secondItem="wG3-7P-awx" secondAttribute="leading" constant="10" id="RVx-KN-C6M"/>
+                                <constraint firstItem="fmC-YB-ppf" firstAttribute="top" secondItem="H9y-PL-dAt" secondAttribute="bottom" constant="12" id="RvP-bw-ljA"/>
+                                <constraint firstItem="H9y-PL-dAt" firstAttribute="leading" secondItem="wG3-7P-awx" secondAttribute="leading" constant="10" id="SaB-ky-iX4"/>
+                                <constraint firstItem="IJA-HA-55T" firstAttribute="top" secondItem="fmC-YB-ppf" secondAttribute="bottom" constant="12" id="SgC-YL-e1h"/>
+                                <constraint firstAttribute="trailing" secondItem="OpH-mF-v5V" secondAttribute="trailing" constant="10" id="Spf-Xx-vWv"/>
+                                <constraint firstItem="fe1-sb-Nim" firstAttribute="leading" secondItem="wG3-7P-awx" secondAttribute="leading" constant="10" id="SuR-X7-waY"/>
+                                <constraint firstItem="bRg-hb-sIk" firstAttribute="top" secondItem="kav-kB-E10" secondAttribute="bottom" constant="12" id="T9U-iL-awQ"/>
+                                <constraint firstItem="oJP-M6-wpu" firstAttribute="leading" secondItem="gtt-cl-LLz" secondAttribute="trailing" constant="20" id="TYx-nk-hTQ"/>
+                                <constraint firstItem="OpH-mF-v5V" firstAttribute="leading" secondItem="wG3-7P-awx" secondAttribute="leading" constant="10" id="W6n-KO-mNP"/>
+                                <constraint firstItem="btR-5n-r2l" firstAttribute="leading" secondItem="4In-jn-p1e" secondAttribute="trailing" constant="10" id="YlD-Me-q4F"/>
+                                <constraint firstItem="H9y-PL-dAt" firstAttribute="top" secondItem="fe1-sb-Nim" secondAttribute="bottom" constant="12" id="ZGP-Cb-3Qn"/>
+                                <constraint firstItem="xme-Fg-D2K" firstAttribute="top" secondItem="k8F-6o-J6H" secondAttribute="bottom" constant="12" id="ZdA-Bp-sOB"/>
+                                <constraint firstItem="kav-kB-E10" firstAttribute="leading" secondItem="wG3-7P-awx" secondAttribute="leading" constant="10" id="Zuk-oG-Dk8"/>
+                                <constraint firstAttribute="trailing" secondItem="Jft-j8-LcP" secondAttribute="trailing" constant="12" id="aca-FE-18D"/>
+                                <constraint firstItem="NGt-Eo-ZDv" firstAttribute="top" secondItem="O9Q-Wa-HR5" secondAttribute="bottom" constant="30" id="cHR-eY-Nxe"/>
+                                <constraint firstAttribute="trailing" secondItem="fmC-YB-ppf" secondAttribute="trailing" constant="10" id="dou-gJ-onv"/>
+                                <constraint firstAttribute="trailing" secondItem="aTY-ON-uCS" secondAttribute="trailing" constant="10" id="e89-oZ-arn"/>
+                                <constraint firstAttribute="trailing" secondItem="fe1-sb-Nim" secondAttribute="trailing" constant="10" id="eCT-lR-kXw"/>
+                                <constraint firstItem="Ns2-PG-V2P" firstAttribute="top" secondItem="oJP-M6-wpu" secondAttribute="bottom" constant="12" id="fl8-d6-0uI"/>
+                                <constraint firstAttribute="trailing" secondItem="O9Q-Wa-HR5" secondAttribute="trailing" constant="10" id="gLR-EZ-y0a"/>
+                                <constraint firstItem="aTY-ON-uCS" firstAttribute="leading" secondItem="wG3-7P-awx" secondAttribute="leading" constant="10" id="hMy-o1-zzG"/>
+                                <constraint firstAttribute="trailing" secondItem="Ns2-PG-V2P" secondAttribute="trailing" constant="10" id="j8B-qs-wMn"/>
+                                <constraint firstItem="xme-Fg-D2K" firstAttribute="width" secondItem="Jft-j8-LcP" secondAttribute="width" id="kLG-Um-GgD"/>
+                                <constraint firstItem="c01-kq-7Co" firstAttribute="top" secondItem="IJA-HA-55T" secondAttribute="bottom" constant="15" id="kX5-6e-hfj"/>
+                                <constraint firstAttribute="trailing" secondItem="NGt-Eo-ZDv" secondAttribute="trailing" constant="10" id="mUS-nc-bPM"/>
+                                <constraint firstItem="kav-kB-E10" firstAttribute="top" secondItem="l9e-Qp-GMO" secondAttribute="bottom" constant="12" id="nKY-ra-E9d"/>
+                                <constraint firstItem="Jft-j8-LcP" firstAttribute="leading" secondItem="xme-Fg-D2K" secondAttribute="trailing" constant="20" id="ntp-nz-Qks"/>
+                                <constraint firstItem="aTY-ON-uCS" firstAttribute="top" secondItem="OpH-mF-v5V" secondAttribute="bottom" constant="12" id="oUS-fu-vAC"/>
+                                <constraint firstAttribute="trailing" secondItem="btR-5n-r2l" secondAttribute="trailing" constant="10" id="oh4-9p-1pP"/>
+                                <constraint firstItem="fmC-YB-ppf" firstAttribute="leading" secondItem="wG3-7P-awx" secondAttribute="leading" constant="10" id="pWz-hs-eZB"/>
+                                <constraint firstAttribute="trailing" secondItem="bRg-hb-sIk" secondAttribute="trailing" constant="10" id="rjU-re-4fW"/>
+                                <constraint firstAttribute="trailing" secondItem="IJA-HA-55T" secondAttribute="trailing" constant="10" id="u7k-jq-i4v"/>
+                                <constraint firstAttribute="height" constant="1000" id="vwC-UV-354"/>
+                                <constraint firstAttribute="trailing" secondItem="kav-kB-E10" secondAttribute="trailing" constant="10" id="wN6-0B-BVL"/>
+                                <constraint firstItem="gtt-cl-LLz" firstAttribute="centerY" secondItem="oJP-M6-wpu" secondAttribute="centerY" id="y89-HF-1Hj"/>
+                                <constraint firstItem="l9e-Qp-GMO" firstAttribute="top" secondItem="wG3-7P-awx" secondAttribute="top" constant="12" id="yXU-qc-fG5"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="wG3-7P-awx" firstAttribute="top" secondItem="iWy-6w-V2H" secondAttribute="top" id="2OM-NK-M3C"/>
+                        <constraint firstAttribute="bottom" secondItem="wG3-7P-awx" secondAttribute="bottom" id="RiJ-8A-eqQ"/>
+                        <constraint firstItem="wG3-7P-awx" firstAttribute="leading" secondItem="iWy-6w-V2H" secondAttribute="leading" id="XXh-2I-VO9"/>
+                        <constraint firstItem="wG3-7P-awx" firstAttribute="trailing" secondItem="iWy-6w-V2H" secondAttribute="trailing" id="hjy-PQ-KRf"/>
+                        <constraint firstItem="wG3-7P-awx" firstAttribute="width" secondItem="iWy-6w-V2H" secondAttribute="width" id="rKo-a2-OAW"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="IVv-q7-L8J"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="3Gn-60-hf2"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="iWy-6w-V2H" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" symbolic="YES" id="0uj-aE-zGx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="iWy-6w-V2H" secondAttribute="bottom" constant="5" id="TkQ-Tm-0Eb"/>
+                <constraint firstItem="iWy-6w-V2H" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="d1B-Ah-IpE"/>
+                <constraint firstItem="iWy-6w-V2H" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="zce-PC-Yim"/>
+            </constraints>
+            <point key="canvasLocation" x="229.90654205607476" y="-82.289416846652273"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

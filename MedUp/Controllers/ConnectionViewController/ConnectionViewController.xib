@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConnectionViewController" customModule="MedUp" customModuleProvider="target">
+            <connections>
+                <outlet property="reloadButton" destination="QaX-EY-TtD" id="36o-LE-yBa"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="connection_icon" translatesAutoresizingMaskIntoConstraints="NO" id="suH-VQ-gKy">
+                    <rect key="frame" x="62" y="66" width="290" height="169"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Կապի Ընդհատում" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Vi-1e-B83" customClass="MedLabel" customModule="MedUp" customModuleProvider="target">
+                    <rect key="frame" x="8" y="265" width="398" height="23"/>
+                    <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="17"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DqH-nU-AEZ" customClass="MedLabel" customModule="MedUp" customModuleProvider="target">
+                    <rect key="frame" x="8" y="297" width="398" height="46"/>
+                    <string key="text">Գործողությունն ընդհատվել է։
+Խնդրում ենք թարմացնել</string>
+                    <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="17"/>
+                    <color key="textColor" red="0.066666666666666666" green="0.066666666666666666" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QaX-EY-TtD" customClass="MedLoadingButton" customModule="MedUp" customModuleProvider="target">
+                    <rect key="frame" x="16" y="758" width="382" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="vuV-n1-Cxv"/>
+                    </constraints>
+                    <state key="normal" title="Թարմացնել"/>
+                    <connections>
+                        <action selector="reloadButtonAction" destination="-1" eventType="touchUpInside" id="n3J-ZY-0ua"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="suH-VQ-gKy" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="22" id="2P3-uR-FFQ"/>
+                <constraint firstItem="9Vi-1e-B83" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="C39-sV-cYF"/>
+                <constraint firstItem="suH-VQ-gKy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="62" id="EJK-g4-NUe"/>
+                <constraint firstAttribute="trailing" secondItem="QaX-EY-TtD" secondAttribute="trailing" constant="16" id="Juf-8Q-Vo1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9Vi-1e-B83" secondAttribute="trailing" constant="8" id="Mxm-9D-Lxr"/>
+                <constraint firstAttribute="trailing" secondItem="DqH-nU-AEZ" secondAttribute="trailing" constant="8" id="Ocb-bF-FPs"/>
+                <constraint firstItem="QaX-EY-TtD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="XMn-Zc-aFr"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="suH-VQ-gKy" secondAttribute="trailing" constant="62" id="btM-iJ-2SB"/>
+                <constraint firstItem="DqH-nU-AEZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="hbA-6e-WAd"/>
+                <constraint firstItem="DqH-nU-AEZ" firstAttribute="top" secondItem="9Vi-1e-B83" secondAttribute="bottom" constant="9" id="kTg-8S-eci"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="QaX-EY-TtD" secondAttribute="bottom" constant="49" id="l77-rE-iXt"/>
+                <constraint firstItem="9Vi-1e-B83" firstAttribute="top" secondItem="suH-VQ-gKy" secondAttribute="bottom" constant="30" id="tFO-Ga-KSw"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="95"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="connection_icon" width="252" height="169"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
